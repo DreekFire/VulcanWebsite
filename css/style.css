@@ -3,33 +3,61 @@
     src: url("../fonts/bebas-neue.otf");
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
+	overflow-x: hidden;
 	--main-red: #8c150c;
+}
+
+h1, h2 {
+	font-family: bebasNeue!important;
+	color: #8c150c!important;
+	letter-spacing: 2px;
+}
+
+p {
+	text-decoration: none;
+	font-size: 16px;
+	font-family: "Helvetica Neue", Helvetica;
 }
 
 button:focus {
 	outline: 0;
 }
 
+div:after {
+    clear: both;
+}
+
 #bg {
-	position: absolute;
-	z-index: 0;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	background-image: url("../images/robot.jpg");
-	background-size: 100%;
-	background-position: center;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
 }
 
 #landing-img {
 	position: absolute;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("../images/robot.jpg");
+	background-size: 100%;
+	background-position: center;
+	transform: scale(1.1);
+}
+
+#landing-img-blurred {
+	position: absolute;
 	z-index: 1;
 	width: 100%;
 	height: 100%;
+	text-align: center;
 	background-image: url("../images/robot.jpg");
 	background-size: 100%;
 	background-position: center;
@@ -49,9 +77,11 @@ button:focus {
 
 #landing-text {
 	text-align: center;
+	font-family: bebasNeue;
 	z-index: 3;
 	margin: 0;
 	position: absolute;
+	width: 50%;
 	top: 50%;
 	left: 50%;
 	-ms-transform: translate(-50%, -50%);
@@ -59,9 +89,10 @@ button:focus {
 }
 
 #landing-text p {
-	font-family: bebasNeue;
+	font-family: inherit;
 	margin: 0;
 	color: white;
+	letter-spacing: 2px;
 }
 
 #logo {
@@ -76,4 +107,71 @@ button:focus {
 
 #logo:hover {
 	background-color: #eeeeee;
+}
+
+#navlinks {
+	position: absolute;
+	display: flex;
+	width: 100%;
+	text-align: center;
+	margin-top: 3em;
+	justify-content: space-around;
+}
+
+#navlinks a {
+	font-size: 20px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#main {
+	padding: 3em;
+}
+
+#header {
+	position: relative;
+	position: sticky;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.col {
+	position: relative;
+	padding-right: 15px;
+	padding-left: 15px;
+	float: left;
+}
+
+.padded {
+	padding: 1em;
+}
+
+.land {
+	position: relative;
+	top: 100vh;
+	margin-bottom: -100vh;
+}
+
+.people {
+	height: 400px;
+}
+
+.people p {
+	font-size: 14px;
+}
+
+.img-center {
+	margin: 0 auto;
+}
+
+.fa-facebook-square {
+	color: #3B5998!important;
+}
+
+.fa-twitter-square {
+	color: #1DA1F2!important;
 }
