@@ -131,6 +131,7 @@ iframe {
     border-radius: 0px;
     border: 0px;
 }
+
 .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus{
     background-color: #8C150C;
 }
