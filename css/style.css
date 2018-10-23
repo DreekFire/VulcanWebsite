@@ -131,6 +131,31 @@ div:after {
 #header {
 	position: relative;
 	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+#sponsors {
+	margin-left: 5em;
+}
+
+#sponsors a {
+	margin: 1em;
+	float: left;
+}
+
+.container {
+	margin: none!important;
+}
+
+.container div {
+	display: inline-block;
+	float: left;
+}
+
+.navbar-right {
+	font-size: 30px;
+	letter-spacing: 0.1em;
 }
 
 .sticky {
@@ -144,6 +169,10 @@ div:after {
 	padding-right: 15px;
 	padding-left: 15px;
 	float: left;
+}
+
+.page-header {
+	clear: both;
 }
 
 .padded {
@@ -166,6 +195,10 @@ div:after {
 
 .img-center {
 	margin: 0 auto;
+}
+
+.navbar-collapse {
+	width: 100%;
 }
 
 .fa-facebook-square {
