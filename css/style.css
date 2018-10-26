@@ -144,6 +144,10 @@ div:after {
 	float: left;
 }
 
+#sponsors h1 a:hover {
+	text-decoration: none;
+}
+
 .container {
 	margin: none!important;
 }
