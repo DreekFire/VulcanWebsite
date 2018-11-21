@@ -137,11 +137,11 @@ div:after {
 
 #sponsors {
 	margin-left: 5em;
+	float: left;
 }
 
 #sponsors a {
 	margin: 1em;
-	float: left;
 }
 
 #sponsors h1 a:hover {
