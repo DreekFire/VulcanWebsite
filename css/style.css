@@ -135,21 +135,38 @@ div:after {
 	z-index: 1;
 }
 
-#sponsors {
-	margin-left: 5em;
-	float: left;
+#contact {
+	display: inline-flex;
+	flex-direction: column;
 }
 
-#sponsors a {
-	margin: 1em;
+#sponsor-list {
+	display: inline-flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	margin-left: 1em;
+	white-space: normal;
 }
 
-#sponsors h1 a:hover {
+#sponsor-list > a {
+	display: inline-block;
+	margin: 0.75em;
+	vertical-align: top;
+}
+
+#sponsors-section a:hover {
 	text-decoration: none;
+}
+
+#sponsors-section h1 {
+	width: 100%;
+	margin-top: 20px;
 }
 
 .container {
 	margin: none!important;
+	white-space: nowrap;
+	display: flex;
 }
 
 .container div {
